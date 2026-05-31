@@ -130,9 +130,18 @@ body{
   letter-spacing:.05em;
   text-align:center;
 }
-  @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+@media (max-width: 768px) {
+    /* هنا حط التعديلات الخاصة بالموبايل بس */
+    
+    .photos-container {
+        display: flex;
+        flex-direction: row; /* عشان الصور تفضل جنب بعض أو خليها column لو عايزهم تحت بعض */
+        gap: 10px;
+    }
+
+    p {
+        font-size: 14px; /* تظبيط حجم الكلام العربي عشان يبقى مريح للعين */
+        line-height: 1.6;
     }
 }
 </style>
